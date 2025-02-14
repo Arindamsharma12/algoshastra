@@ -36,7 +36,7 @@ Follow these steps to set up the project on your local machine:
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/Arindamsharma12/algoshastra.git
-   cd accessible-platform
+   cd algoshastra
    ```
 
 2. **Install Dependencies**
@@ -46,11 +46,11 @@ Follow these steps to set up the project on your local machine:
 
 3. **Start the Development Server**
    ```bash
-   npm start
+   npm run dev
    ```
 
 4. **Access the Application**
-   Open your browser and navigate to `http://localhost:3000`.
+   Open your browser and navigate to `http://localhost:5173`.
 
 ---
 
@@ -84,8 +84,8 @@ We welcome contributions from the community! To contribute:
 
 Feel free to reach out for any queries or suggestions:
 
-- **Email**: arindam@example.com
-- **GitHub**: [@your-username](https://github.com/your-username)
+- **Email**: techyarindam@gmail.com
+- **GitHub**: [@Arindamsharma12](https://github.com/Arindamsharma12)
 
 ---
 
