@@ -65,8 +65,10 @@ Follow these steps to set up the project on your local machine:
 
 ## 📷 Preview
 
-![Platform Screenshot](https://via.placeholder.com/800x400.png?text=Screenshot+Coming+Soon)
-
+![Platform Screenshot](algo-shastra/src/screenshots/screenshot1.png)
+![Platform Screenshot](algo-shastra/src/screenshots/screenshot2.png)
+![Platform Screenshot](algo-shastra/src/screenshots/screenshot3.png)
+![Platform Screenshot](algo-shastra/src/screenshots/screenshot4.png)
 ---
 
 ## 🤝 Contribution Guidelines
