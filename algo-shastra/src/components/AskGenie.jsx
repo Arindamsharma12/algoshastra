@@ -15,7 +15,7 @@ const AskGenie = () => {
         setDisplayedText("");
 
         try {
-            const res = await axios.post("http://localhost:8000/api/v1/users/ask-doubt", { doubt });
+            const res = await axios.post("https://algoshastra-backend-5.onrender.com/api/v1/users/ask-doubt", { doubt });
             setResponse(res.data.reply);
 
         } catch (error) {

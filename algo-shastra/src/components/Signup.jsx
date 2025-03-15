@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+
 import { useForm } from "react-hook-form";
 import Input from "./Input";
 import "core-js/stable";
@@ -6,12 +7,23 @@ import "regenerator-runtime/runtime";
 import SpeechRecognition, {
   useSpeechRecognition,
 } from "react-speech-recognition";
+import axios from 'axios'
 import Button from "./Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SignupVoice from "./SignupVoice";
 const Signup = () => {
   const { register, handleSubmit } = useForm();
-  const signup = (data) => console.log(data);
+  const history = useNavigate()
+  // const signup = (data) => console.log(data);
+  const signup = async (data)=>{
+    await axios.post(`http://localhost:4000/api/v1/users/register`,data)
+    .then((response)=>{
+      alert(response.data.message);
+      history("/login")
+    }).catch((error)=>{
+      alert(error)
+    })
+  }
   const [isVoice,setIsVoice] = useState(false);
 
   return (
