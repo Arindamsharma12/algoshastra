@@ -7,6 +7,7 @@ import "regenerator-runtime/runtime";
 import SpeechRecognition,{useSpeechRecognition} from 'react-speech-recognition';
 import { Link } from 'react-router-dom';
 import LoginVoice from './LoginVoice'
+
 const Login = () => {
   const {register,handleSubmit} = useForm()
   const signup = (data)=>console.log(data)  

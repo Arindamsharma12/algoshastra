@@ -29,3 +29,4 @@ const askGenie =  asyncHandler(async (req,res)=>{
 router.route('/ask-doubt').post(askGenie)
 
 export default router;
+

@@ -1,11 +1,11 @@
 import React from 'react';
 import aboutImg from '../images/about.jpg'
-
+import ParticleRing from './3d/BubbleText.jsx'
 
 const About = () => {
   return (
-    <section className="bg-gray-100 py-10 px-5 md:px-20">
-      <div className='flex items-center justify-center'>
+    <section className="bg-gray-100 py-4">
+      <div className='flex items-center justify-center px-5 md:px-20'>
       <img src={aboutImg} alt="" className='w-[50%] m-4' />
       </div>
       <div className="max-w-5xl mx-auto text-center">
@@ -39,6 +39,7 @@ const About = () => {
             Our AI system assists students by providing intelligent solutions to their doubts, enhancing their learning experience.
           </p>
         </div>
+        <ParticleRing/>
       </div>
     </section>
   );

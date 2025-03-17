@@ -30,24 +30,28 @@ export default function CourseContent() {
       title: "Blog",
       description: "Read Our Latest Blogs",
       icon: "🖥️",
+      href:"#",
       bgColor: "bg-blue-100",
     },
     {
       title: "Courses",
       description: "Access Our Latest Courses",
       icon: "📘",
+      href:"#",
       bgColor: "bg-red-100",
     },
     {
       title: "Test Series",
       description: "Explore JEE 2025 Test Series",
       icon: "📄",
+      href:"/test-paper",
       bgColor: "bg-green-100",
     },
     {
       title: "Books",
       description: "Find Preparation Books",
       icon: "📖",
+      href:"#",
       bgColor: "bg-blue-200",
     },
   ];
@@ -83,7 +87,7 @@ export default function CourseContent() {
             <div
               key={index}
               className={`flex cursor-pointer flex-col justify-between items-start p-4 rounded-2xl shadow-lg ${card.bgColor} transition-transform transform hover:scale-105`}
-              onClick={()=>navigate("/test-paper")}
+              onClick={()=>navigate(`${card.href}`)}
             >
               <div className="flex items-center space-x-2">
                 <span className="text-2xl">{card.icon}</span>
